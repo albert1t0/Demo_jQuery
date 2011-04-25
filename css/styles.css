@@ -1,0 +1,67 @@
+body  {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#content {
+  margin: auto;
+  background: red;
+}
+
+#cabecera {
+  background: blue;
+  color:  white;
+  height: 100px;
+}
+
+#cabecera h1 {
+  padding: 25px;
+  font: bold 20pt Arial;
+}
+
+#navegar {
+  float:  left;
+  width:  20%;
+  list-style: none;
+  font-family: Arial,sans-serif;
+  font-size:  medium;
+  text-align: center;
+}
+
+#navegar a {
+  padding:  5px;
+  color:  white;
+  font: 12pt/25pt Arial;
+}
+
+#navegar a:hover {
+  background-color: white;
+  color:  red;
+}
+
+#main {
+  background-color: #f5f5f5;
+  margin-left: 20%;
+  padding: 5px;
+  text-align: justify;
+}
+
+#main h2 {
+  font: bold 18pt/22pt Arial;
+  background-color: gray;
+}
+
+#main p {
+  font: 10pt/15pt Arial;
+  margin: 2px 2px 5px;
+  color: gray;
+}
+
+#footer {
+  background: blue;
+  margin: auto;
+  height: 20%;
+  font: bold 15px/20px Arial;
+  color:  white;
+ }
