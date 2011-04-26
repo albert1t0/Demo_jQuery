@@ -2,22 +2,30 @@ body  {
   width: 80%;
   margin: auto;
   text-align: center;
+  background-color: graytext;
 }
 
 #content {
   margin: auto;
-  background: red;
+  background: url("../img/fondo2.jpg");
 }
 
 #cabecera {
-  background: blue;
+  background: url("../img/fondo1.jpg");
   color:  white;
-  height: 100px;
+  height: 125px;
 }
 
 #cabecera h1 {
   padding: 25px;
   font: bold 20pt Arial;
+  float:  left;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+#cabecera img {
+  float: right;
 }
 
 #navegar {
@@ -37,7 +45,7 @@ body  {
 
 #navegar a:hover {
   background-color: white;
-  color:  red;
+  color:  #faebd7;
 }
 
 #main {
@@ -58,8 +66,12 @@ body  {
   color: gray;
 }
 
+/*#menu1, #menu2, #menu3 {*/
+  /*display:  none;*/
+/*}*/
+
 #footer {
-  background: blue;
+  background: url("../img/fondo1.jpg");
   margin: auto;
   height: 20%;
   font: bold 15px/20px Arial;
