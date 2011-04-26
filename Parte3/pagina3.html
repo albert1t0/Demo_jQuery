@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+  <title>Demo jQuery</title>
+  <link rel="stylesheet" href=  "../css/reset.css" type="text/css">
+  <link rel="stylesheet" title="Default" href="../css/styles.css" type="text/css">
+  <style type="text/css">
+    <!--
+    div #slideshow {
+      width: 100%;
+      height: 450px;
+      margin: auto;
+      padding: 0;
+    }
+
+    .slide {
+      padding:  5px;
+      border: 1px solid gray;
+      background-color: #f5f5f5;
+      width:  95%;
+      height: 95%;
+      margin: auto;
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../js/jquery-1.5.2.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.cycle.all.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+//      $('div #slideshow').cycle('scrollDown');
+
+// Efectos de Cycle
+// blindX	blindY	blindZ	cover	curtainX	curtainY	fade
+// fadeZoom	growX	growY	scrollUp	scrollDown	scrollLeft
+// scrollRight	scrollHorz	scrollVert	shuffle	slideX
+// slideY	toss	turnUp	turnDown	turnLeft	turnRight	uncover	wipe	zoom
+
+//      $('#menu1, #menu2, #menu3').hide();
+//      $('l1').click(function(){$(this).fadeOut(100);$(this).fadeIn(500);}).css("cursor","pointer");
+//      $('h2').click(function(){$(this).next('p').hide();}).css('cursor','pointer');
+//      $('#cabecera img').click(function(){$('p').show();});
+//      $('h2').click(function(){if ($(this).next('p').is(':hidden')) { $(this).next('p').show() } else { $(this).next('p').hide() } } ).css('cursor','pointer');
+//      $('h2').click(function(){if ($(this).next('p').is(':hidden')) { $(this).next('p').slideDown('slow') } else { $(this).next('p').slideUp('slow') } } ).css('cursor','pointer');
+//      $('#main').html($('#menu1').html());
+    });
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      var inicio = $('#main').clone();
+      var efectos = $('#menu1').clone();
+      var estad = $('#menu2').clone();
+      $('#menu1, #menu2, #menu3').hide();
+      $('li:eq(0)').click(function(){
+        $('#main').html(inicio.html());
+        $(this).fadeOut(100);$(this).fadeIn(500);
+      });
+      $('li:eq(1)').click(function(){
+        $('#main').html(efectos.html());
+        $(this).fadeOut(100);$(this).fadeIn(500);
+        $('div #slideshow').cycle('zoom');
+      });
+      $('li:eq(2)').click(function(){
+        $('#main').html(estad.html());
+        $(this).fadeOut(100);$(this).fadeIn(500);
+      });
+    })
+  </script>
+</head>
+  <body>
+  <div id="content">
+    <div id="cabecera">
+      <h1>jQuery-Demo</h1>
+      <img src="../img/drupe.png" alt="Drupe">
+    </div>
+    <div id="navegar">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Efectos</a></li>
+      <li><a href="#">Estadísticas</a></li>
+    </div>
+    <div id="main">
+      <h2>Esto es el título 1</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 2</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 3</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 4</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 5</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 6</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 7</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+    </div>
+
+  </div>
+  <div id="footer">
+
+    El pié de la página.
+  </div>
+  <div id="menu1">
+      <h2>Extensión Cycle</h2>
+      <div id="slideshow" style="position: relative;">
+        <img src="../img/imagen1.png" alt="Imagen 1" class="slide">
+        <img src="../img/imagen2.png" alt="Imagen 2" class="slide">
+        <img src="../img/imagen3.png" alt="Imagen 3" class="slide">
+        <img src="../img/imagen4.png" alt="Imagen 4" class="slide">
+        <img src="../img/imagen5.png" alt="Imagen 5" class="slide">
+        <img src="../img/imagen6.png" alt="Imagen 6" class="slide">
+        <img src="../img/imagen7.png" alt="Imagen 7" class="slide">
+      </div>
+    </div>
+  <div id="menu2">
+      <h2>Esto es el título 1</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 2</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 3</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 4</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 5</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 6</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 7</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+    </div>
+  <div id="menu3">
+      <h2>Esto es el título 1</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 2</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 3</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 4</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 5</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Este es el título 6</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+      <h2>Esto es el título 7</h2>
+      <p>PhpStorm smartly analyzes the features you use most often during your development sessions, and reminds you of the features you might have missed. Actually, the Productivity Guide is your personal adviser that helps you fulfil your tasks in the most efficient way.
+         The Productivity Guide automatically displays a Tips of the Day window, with the features personally recommended to a particular user, during compilation and other time-consuming operations, such as repository updates, downloads etc.</p>
+    </div>
+</body>
+</html>
