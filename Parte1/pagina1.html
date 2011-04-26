@@ -6,27 +6,34 @@
   <title>Demo jQuery</title>
   <link rel="stylesheet" href=  "../css/reset.css" type="text/css">
   <link rel="stylesheet" title="Default" href="../css/styles.css" type="text/css">
-  <style type="text/css">
-    <!--
-
-    -->
-  </style>
   <script type="text/javascript" src="../jquery-1.5.2.min.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
   <script type="text/javascript">
     $(function(){
-      $('h1').click(function(){$(this).fadeOut(100);$(this).fadeIn(500);}).css("cursor","pointer");
+      $('li').click(function(){$(this).fadeOut(100);$(this).fadeIn(500);}).css("cursor","pointer");
     });
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      // realizar acciones - modelo javascript
+    }
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      // realizar acciones - modelo jquery
+    })
   </script>
 </head>
   <body>
   <div id="content">
     <div id="cabecera">
       <h1>jQuery-Demo</h1>
+      <img src="../img/drupe.png" alt="Drupe">
     </div>
     <div id="navegar">
-      <li><a href="#">Menu 1</a></li>
-      <li><a href="#">Menu 2</a></li>
-      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Efectos</a></li>
+      <li><a href="#">Estadísticas</a></li>
     </div>
     <div id="main">
       <h2>Esto es el título 1</h2>
